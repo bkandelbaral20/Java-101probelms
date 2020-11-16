@@ -1,5 +1,5 @@
 
-//java practise 101 challenge
+//java practise 101 challenges
 
 public class practise101 {
 
@@ -14,8 +14,25 @@ public class practise101 {
 // * Given an input String, name; return a String with "Hello " appended in-front of name and "!" appended after name.
 
     public static String sayHello( String name){
-        return "!" + name + "!";
+        return "! " + name + " !";
     }
 
+//    Exercise 004 - Add doubles
+//     * Write a method to add to real numbers (double) and return the sum as a double.
+
+    public static double addDoubles(double a , double b){
+        return (a*a + b*b);
+    }
+
+
+
+
+//Printing out the answer for checking inside the main method
+
+    public static void main(String[] args) {
+        System.out.println(addInt(2,5));
+        System.out.println(sayHello("Binjita"));
+        System.out.println(addDoubles(1,2));
+    }
 
 }
