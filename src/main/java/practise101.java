@@ -39,7 +39,13 @@ public class practise101 {
         return a == b;
     }
 
+//    * Exercise 007 - is Greater Than
+//     * Write a method that accepts two doubles and returns the boolean value true if a is greater than b and returns
+//     * the boolean value false if a is not greater than b.
 
+    public static boolean isGreaterThan( double a, double b){
+        return a>b;
+    }
 
 //Printing out the answer for checking inside the main method
 
@@ -49,6 +55,7 @@ public class practise101 {
         System.out.println(addDoubles(1,2));
         System.out.println(concatenateString("hello", "there"));
         System.out.println(isEqual(2,3));
+        System.out.println(isGreaterThan(3,2));
     }
 
 }
