@@ -24,6 +24,15 @@ public class practise101 {
         return (a*a + b*b);
     }
 
+   // * Exercise 005 - Concatenate strings
+    // * Write a method to join to Strings together with a space between the two Strings.
+
+    public static String concatenateString(String a, String b){
+        return a + " " + b;
+    }
+
+
+
 
 
 
@@ -33,6 +42,7 @@ public class practise101 {
         System.out.println(addInt(2,5));
         System.out.println(sayHello("Binjita"));
         System.out.println(addDoubles(1,2));
+        System.out.println(concatenateString("hello", "there"));
     }
 
 }
