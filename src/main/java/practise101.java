@@ -31,8 +31,13 @@ public class practise101 {
         return a + " " + b;
     }
 
+// *Exercise 006 - is Equal
+//     * Write a method that accepts two integers and returns the boolean value true if they are equal and returns the
+//     * boolean value false if the are not equal.
 
-
+    public static boolean isEqual(int a, int b){
+        return a == b;
+    }
 
 
 
@@ -43,6 +48,7 @@ public class practise101 {
         System.out.println(sayHello("Binjita"));
         System.out.println(addDoubles(1,2));
         System.out.println(concatenateString("hello", "there"));
+        System.out.println(isEqual(2,3));
     }
 
 }
