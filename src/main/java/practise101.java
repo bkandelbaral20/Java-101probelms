@@ -125,6 +125,27 @@ public static ArrayList<Integer> findFactors(int num){
         }
     }
 
+//    * Exercise 015 - Find Two Addends
+//     * Given a primitive array of integers a number n, return whether any two numbers from the array add up to equal n.
+//     * For example, given [7, 15, 3, 6, 8] and n equal to 13, return true since 7 + 6 is 13.
+
+    public static boolean twoAddend(int[] nums, int num){
+        //checks the nums
+        if(nums == null || nums.length < 2){
+            return false;
+        }
+        //now find the sums using for loop
+        for(int i=0; i< nums.length;i++){
+            for(int j = i+1; j < nums.length; j++){
+                if(nums[i] + nums[j] == num){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+
 //Printing out the answer for checking inside the main method
 
     public static void main(String[] args) {
@@ -139,6 +160,7 @@ public static ArrayList<Integer> findFactors(int num){
         System.out.println(IndicateOperation("SUM",1,3));
         System.out.println(findFactors(4));
         System.out.println(isNumeric("3-5"));
+//        System.out.println(twoAddend([7,15,3,6,8], 13 ));
     }
 
 }
