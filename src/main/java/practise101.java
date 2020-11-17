@@ -53,6 +53,22 @@ public class practise101 {
         return num*num*num;
     }
 
+//    * Exercise 009 - Positive Difference
+//     * Write a method that accepts two integers and returns the positive difference between the two numbers.
+
+    public static int positiveDifference(int a, int b){
+        return Math.abs(a)- Math.abs(b);
+    }
+
+//    * Exercise 010 - Remainder
+//     * Write a method that accepts two integers and returns the remainder from the division .
+
+    public static int remainder( int a, int b){
+        return a / b;
+    }
+
+
+
 //Printing out the answer for checking inside the main method
 
     public static void main(String[] args) {
@@ -63,6 +79,7 @@ public class practise101 {
         System.out.println(isEqual(2,3));
         System.out.println(isGreaterThan(3,2));
         System.out.println(cubed(2));
+        System.out.println(remainder(2,4));
     }
 
 }
