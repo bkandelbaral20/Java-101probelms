@@ -1,6 +1,8 @@
 
 //java practise 101 challenges
 
+import java.util.ArrayList;
+
 public class practise101 {
 
 //  * Exercise 001 - Add Ints
@@ -67,7 +69,38 @@ public class practise101 {
         return a / b;
     }
 
+//    * Exercise 011 - Preform Indicate Operation
+//     * Write a method with 3 parameters; a String and 2 doubles. The string will be an operation that the operation
+//     * needs to process on the two operands. Return the result if the operation. Return 0.0 if the operation is not
+//     * one of the four specified. The operation should be case sensitive.
 
+    public static double IndicateOperation(String operation, double a, double b){
+        switch (operation) {
+            case ("ADD"):
+                return a + b;
+            case ("SUB"):
+                return a - b;
+            case ("MUL"):
+                return a * b;
+            case ("DIV"):
+                return a / b;
+            default:
+        }
+        return 0;
+    }
+
+//     * Exercise 012 - Find Factors
+//     * Find all of the factors for a given positive integer (int). The result needs to be sorted in ascending order.
+
+public static ArrayList<Integer> findFactors(int num){
+    ArrayList<Integer> numbers = new ArrayList<>();
+        for(int i = 1; i<= num; i++ ){
+            if(num % i==0){
+                numbers.add(i);
+            }
+        }
+        return numbers;
+}
 
 //Printing out the answer for checking inside the main method
 
@@ -80,6 +113,8 @@ public class practise101 {
         System.out.println(isGreaterThan(3,2));
         System.out.println(cubed(2));
         System.out.println(remainder(2,4));
+        System.out.println(IndicateOperation("sum",1,3));
+        System.out.println(findFactors(4));
     }
 
 }
