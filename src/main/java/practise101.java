@@ -102,6 +102,29 @@ public static ArrayList<Integer> findFactors(int num){
         return numbers;
 }
 
+//     * Exercise 013 - Get Nearest Integer to Real Sum
+//     * Given a two double parameters, return the nearest integer sum. If a number is half-way between to integers,
+//     * round up for positive sums and down for negative sums.
+
+//    public static int getNearestIntegerToRealSum(double firstRealAddend, double secondRealAddend ) {
+//
+//        return 0;
+//    }
+
+
+//     * Exercise 014 - Is it a number
+//     * Given a string s, write a method (function) that will return true if its a valid single integer or floating
+//     * point number or false if its not.
+
+    public static boolean isNumeric(String str) {
+        try {
+            Double.parseDouble(str);
+            return true;
+        } catch(NumberFormatException e){
+            return false;
+        }
+    }
+
 //Printing out the answer for checking inside the main method
 
     public static void main(String[] args) {
@@ -113,8 +136,9 @@ public static ArrayList<Integer> findFactors(int num){
         System.out.println(isGreaterThan(3,2));
         System.out.println(cubed(2));
         System.out.println(remainder(2,4));
-        System.out.println(IndicateOperation("sum",1,3));
+        System.out.println(IndicateOperation("SUM",1,3));
         System.out.println(findFactors(4));
+        System.out.println(isNumeric("3-5"));
     }
 
 }
