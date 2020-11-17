@@ -43,8 +43,14 @@ public class practise101 {
 //     * Write a method that accepts two doubles and returns the boolean value true if a is greater than b and returns
 //     * the boolean value false if a is not greater than b.
 
-    public static boolean isGreaterThan( double a, double b){
+    public static boolean isGreaterThan(double a, double b){
         return a>b;
+    }
+
+//    * Exercise 008 - Cubed
+//     * Write a method that accepts a double and returns the number cubed ( times itself three times).
+    public static double cubed(double num){
+        return num*num*num;
     }
 
 //Printing out the answer for checking inside the main method
@@ -56,6 +62,7 @@ public class practise101 {
         System.out.println(concatenateString("hello", "there"));
         System.out.println(isEqual(2,3));
         System.out.println(isGreaterThan(3,2));
+        System.out.println(cubed(2));
     }
 
 }
